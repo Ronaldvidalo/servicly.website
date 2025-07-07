@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicly - Conectando Clientes y Proveedores de Servicios</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="Imagenes/logo.Servicly.app.png" alt="Logo de Servicly" class="header-logo">
+            <h2>Servicly.app</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#servicios">Servicios <span class="arrow-down"></span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="#Proveedor">Servicio Uno</a></li>
+                        <li><a href="#Cliente">Servicio Dos</a></li>
+                        <li><a href="#Ambos">Servicio Tres</a></li>
+                    </ul>
+                </li>
+                <li><a href="#precios">Precios</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li class="dropdown">
+                    <a href="#empresa">Empresa <span class="arrow-down"></span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="politicas.html">Políticas de la Empresa</a></li>
+                        <li><a href="EliminarCuenta.html">Eliminar Cuenta</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-buttons">
+            <a href="#" class="button-ghost">Iniciar Sesión</a>
+            <a href="#" class="button-primary">Prueba Gratis</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Tu plataforma para encontrar y ofrecer servicios.</h1>
+                <p>Miles de personas y negocios confían en nuestra aplicación para conectar, compartir sus trabajos realizados y encontrar las tareas que necesitan completar.</p>
+                <form class="hero-email-form">
+                    <input type="email" placeholder="Introduce tu email aquí" required>
+                    <button type="submit" class="button-primary">Empezar Prueba Gratis</button>
+                </form>
+                <small class="hero-small-text">Prueba gratis por 30 días, no requiere tarjeta de crédito.</small>
+            </div>
+            <div class="hero-visuals">
+                <img src="Imagenes/logo.Servicly.app.png" alt="Mockup de la interfaz de tu producto 1" class="hero-mockup-img">
+                <img src="Imagenes/logo_servicly_circulo_negro.png" alt="Mockup de la interfaz de tu producto 2" class="hero-mockup-img second">
+            </div>
+        </section>
+        <!---
+        <section class="section-padded example-showcase">
+            <h2 class="section-title">Lleva tu negocio online.</h2>
+            <p class="section-subtitle">Crea una experiencia web potente respaldada por herramientas que te ayudan a encontrar clientes, impulsar ventas y gestionar tu día a día.</p>
+            <div class="example-grid">
+                <div class="example-card">
+                    <img src="Imagenes/muestra01.png" alt="Ejemplo de Diseño Web 1">
+                    <h3>Busqueda de nuevos Clientes</h3>
+                    <p>Alfred</p>
+                </div>
+                <div class="example-card">
+                    <img src="Imagenes/logo.Servicly.app.png" alt="Ejemplo de Diseño Web 2">
+                    <h3>Joyas</h3>
+                    <p>Servicly.app</p>
+                </div>
+                <div class="example-card">
+                    <img src="ejemplo-web-3.png" alt="Ejemplo de Diseño Web 3">
+                    <h3>Belleza y Cosméticos</h3>
+                    <p>Then I Met You</p>
+                </div>
+                <div class="example-card">
+                    <img src="ejemplo-web-4.png" alt="Ejemplo de Diseño Web 4">
+                    <h3>Hogar y Jardín</h3>
+                    <p>Miss Boon</p>
+                </div>
+            </div>
+            <a href="#" class="button button-secondary view-all-button">Explora más ejemplos →</a>
+        </section>
+
+        <section class="trusted-companies">
+            <h2 class="trusted-companies-heading">Empresas que <span class="highlight-text">confían</span> en nuestro trabajo.</h2>
+            <div class="carrusel-logos">
+                <div class="pista-logos">
+                    <img src="Imagenes/logo_servicly_circulo_negro.png" alt="Logo Empresa 1">
+                    <img src="Imagenes/logo.Servicly.app.png" alt="Logo Empresa 2">
+                    <img src="Imagenes/logoServiclyCirculofondoblanco.borde.negro.png" alt="Logo Empresa 3">
+                    <img src="Imagenes/servicly.logo.png" alt="Logo Empresa 4">
+                    <img src="Imagenes/logo_servicly_circulo_negro.png" alt="Logo Empresa 5">
+                    <img src="Imagenes/logo.Servicly.app.png" alt="Logo Empresa 1">
+                    <img src="Imagenes/logoServiclyCirculofondoblanco.borde.negro.png" alt="Logo Empresa 2">
+                    <img src="Imagenes/servicly.logo.png" alt="Logo Empresa 3">
+                    <img src="Imagenes/logo_servicly_circulo_negro.png" alt="Logo Empresa 4">
+                    <img src="Imagenes/logoServiclyCirculofondoblanco.borde.negro.png" alt="Logo Empresa 5">
+                </div>
+            </div>
+        </section>
+    -->
+
+        <section id="como-funciona" class="section-padded">
+            <h2>Cómo Funciona</h2>
+            <div class="steps-container">
+                <div class="step-card">
+                    <h3>Paso 1: Regístrate</h3>
+                    <p>Crea tu cuenta en segundos y empieza a explorar nuestras herramientas.</p>
+                </div>
+                <div class="step-card">
+                    <h3>Paso 2: Personaliza</h3>
+                    <p>Adapta tu espacio con nuestras opciones flexibles a tus necesidades.</p>
+                </div>
+                <div class="step-card">
+                    <h3>Paso 3: Lanza</h3>
+                    <p>Todo listo para crecer. ¡Acelera tu negocio al siguiente nivel!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="beneficios-clientes" class="section-padded benefits-section">
+            <h2 class="section-title">Beneficios para Clientes</h2>
+            <p class="section-subtitle">Descubre por qué Servicly es la mejor opción para encontrar el profesional que necesitas.</p>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>Encuentra el Servicio Ideal</h3>
+                    <p>Publica tus necesidades, desde pintar una casa hasta arreglar una puerta. Miles de proveedores están listos para ayudarte.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Compara Presupuestos y Calificaciones</h3>
+                    <p>Recibe múltiples ofertas y compara precios, la calidad y las calificaciones de otros clientes para tomar la mejor decisión.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Contratación Segura y Fácil</h3>
+                    <p>Elige al proveedor que mejor se adapte a tus criterios y contrata de forma sencilla y transparente, sabiendo que estás en buenas manos.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Historial de Trabajos y Valoraciones</h3>
+                    <p>Mantén un registro de tus solicitudes y valora a los proveedores una vez finalizado el trabajo, ayudando a la comunidad.</p>
+                </div>
+            </div>
+            <a href="#" class="button button-primary view-all-button">Encuentra un Servicio Ahora</a>
+        </section>
+
+        <section id="beneficios-proveedores" class="section-padded benefits-section">
+            <h2 class="section-title">Beneficios para Proveedores</h2>
+            <p class="section-subtitle">Potencia tu negocio y encuentra nuevos clientes con la visibilidad y herramientas que Servicly te ofrece.</p>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>Muestra tu Trabajo en un Portafolio</h3>
+                    <p>Crea posts atractivos con tus proyectos y servicios realizados, funciona como un Instagram profesional para tu trabajo.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Accede a Solicitudes de Clientes</h3>
+                    <p>Navega entre cientos de solicitudes de trabajos y envía presupuestos directamente a clientes interesados en tus servicios.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Aumenta tu Reputación y Visibilidad</h3>
+                    <p>Construye tu reputación con calificaciones y comentarios positivos, atrayendo más clientes y oportunidades.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Gestión Simplificada de Proyectos</h3>
+                    <p>Administra tus ofertas, comunicaciones y proyectos desde un solo lugar, optimizando tu tiempo y recursos.</p>
+                </div>
+            </div>
+            <a href="#" class="button button-secondary view-all-button">Empieza a Ofrecer tus Servicios</a>
+        </section>
+        <!-- 
+        <section id="video-explicativo" class="section-padded">
+            <h2>Video Explicativo</h2>
+            <div class="video-container">
+                <video controls preload="none" poster="placeholder-video.jpg">
+                    <source src="tu-video.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+        </section>
+-->
+        <section class="cta-download">
+            <h2>Listo para empezar a construir tu futuro?</h2>
+            <p>Descarga nuestra aplicación móvil y lleva tu negocio donde quiera que vayas.</p>
+            <div class="download-buttons">
+                <a href="#" class="button">Descargar para iOS</a>
+                <a href="#" class="button button-secondary">Descargar para Android</a>
+            </div>
+        </section>
+
+        <section id="redes-sociales" class="section-padded social-media-section">
+            <h2 class="section-title">Encuéntranos en Redes Sociales</h2>
+            <p class="section-subtitle">Sigue nuestras últimas novedades y únete a nuestra comunidad online.</p>
+            <div class="social-icons">
+                <a href="https://facebook.com/tuempresa" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/tuempresa" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com/tuempresa" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://linkedin.com/company/tuempresa" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://youtube.com/tuempresa" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Privacidad</a>
+            <a href="#politicas">Políticas de la Empresa</a>
+            <a href="#">Términos</a>
+            <a href="#eliminar-cuenta">Eliminar Cuenta</a>
+            <a href="#">Contacto</a>
+        </div>
+        <p>© 2023 Tu Empresa. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
