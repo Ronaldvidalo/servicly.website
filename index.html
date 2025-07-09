@@ -17,32 +17,40 @@
             <img src="Imagenes/logo.Servicly.app.png" alt="Logo de Servicly" class="header-logo">
             <h2>Servicly.app</h2>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li class="dropdown">
-                    <a href="#servicios">Servicios <span class="arrow-down"></span></a>
-                    <ul class="dropdown-content">
-                        <li><a href="#Proveedor">Servicio Uno</a></li>
-                        <li><a href="#Cliente">Servicio Dos</a></li>
-                        <li><a href="#Ambos">Servicio Tres</a></li>
-                    </ul>
-                </li>
-                <li><a href="#precios">Precios</a></li>
-                <li><a href="#recursos">Recursos</a></li>
-                <li class="dropdown">
-                    <a href="#empresa">Empresa <span class="arrow-down"></span></a>
-                    <ul class="dropdown-content">
-                        <li><a href="#contacto">Contacto</a></li>
-                        <li><a href="politicas.html">Políticas de la Empresa</a></li>
-                        <li><a href="EliminarCuenta.html">Eliminar Cuenta</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-        <div class="header-buttons">
-            <a href="#" class="button-ghost">Iniciar Sesión</a>
-            <a href="#" class="button-primary">Prueba Gratis</a>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <div class="menu-container">
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#servicios">Servicios <span class="arrow-down"></span></a>
+                        <ul class="dropdown-content">
+                            <li><a href="#Proveedor">Servicio Uno</a></li>
+                            <li><a href="#Cliente">Servicio Dos</a></li>
+                            <li><a href="#Ambos">Servicio Tres</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#precios">Precios</a></li>
+                    <li><a href="#recursos">Recursos</a></li>
+                    <li class="dropdown">
+                        <a href="#empresa">Empresa <span class="arrow-down"></span></a>
+                        <ul class="dropdown-content">
+                            <li><a href="#contacto">Contacto</a></li>
+                            <li><a href="politicas.html">Políticas de la Empresa</a></li>
+                            <li><a href="EliminarCuenta.html">Eliminar Cuenta</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-buttons">
+                <a href="#" class="button-ghost">Iniciar Sesión</a>
+                <a href="#" class="button-primary">Prueba Gratis</a>
+            </div>
         </div>
     </header>
 
@@ -62,54 +70,6 @@
                 <img src="Imagenes/logo_servicly_circulo_negro.png" alt="Mockup de la interfaz de tu producto 2" class="hero-mockup-img second">
             </div>
         </section>
-        <!---
-        <section class="section-padded example-showcase">
-            <h2 class="section-title">Lleva tu negocio online.</h2>
-            <p class="section-subtitle">Crea una experiencia web potente respaldada por herramientas que te ayudan a encontrar clientes, impulsar ventas y gestionar tu día a día.</p>
-            <div class="example-grid">
-                <div class="example-card">
-                    <img src="Imagenes/muestra01.png" alt="Ejemplo de Diseño Web 1">
-                    <h3>Busqueda de nuevos Clientes</h3>
-                    <p>Alfred</p>
-                </div>
-                <div class="example-card">
-                    <img src="Imagenes/logo.Servicly.app.png" alt="Ejemplo de Diseño Web 2">
-                    <h3>Joyas</h3>
-                    <p>Servicly.app</p>
-                </div>
-                <div class="example-card">
-                    <img src="ejemplo-web-3.png" alt="Ejemplo de Diseño Web 3">
-                    <h3>Belleza y Cosméticos</h3>
-                    <p>Then I Met You</p>
-                </div>
-                <div class="example-card">
-                    <img src="ejemplo-web-4.png" alt="Ejemplo de Diseño Web 4">
-                    <h3>Hogar y Jardín</h3>
-                    <p>Miss Boon</p>
-                </div>
-            </div>
-            <a href="#" class="button button-secondary view-all-button">Explora más ejemplos →</a>
-        </section>
-
-        <section class="trusted-companies">
-            <h2 class="trusted-companies-heading">Empresas que <span class="highlight-text">confían</span> en nuestro trabajo.</h2>
-            <div class="carrusel-logos">
-                <div class="pista-logos">
-                    <img src="Imagenes/logo_servicly_circulo_negro.png" alt="Logo Empresa 1">
-                    <img src="Imagenes/logo.Servicly.app.png" alt="Logo Empresa 2">
-                    <img src="Imagenes/logoServiclyCirculofondoblanco.borde.negro.png" alt="Logo Empresa 3">
-                    <img src="Imagenes/servicly.logo.png" alt="Logo Empresa 4">
-                    <img src="Imagenes/logo_servicly_circulo_negro.png" alt="Logo Empresa 5">
-                    <img src="Imagenes/logo.Servicly.app.png" alt="Logo Empresa 1">
-                    <img src="Imagenes/logoServiclyCirculofondoblanco.borde.negro.png" alt="Logo Empresa 2">
-                    <img src="Imagenes/servicly.logo.png" alt="Logo Empresa 3">
-                    <img src="Imagenes/logo_servicly_circulo_negro.png" alt="Logo Empresa 4">
-                    <img src="Imagenes/logoServiclyCirculofondoblanco.borde.negro.png" alt="Logo Empresa 5">
-                </div>
-            </div>
-        </section>
-    -->
-
         <section id="como-funciona" class="section-padded">
             <h2>Cómo Funciona</h2>
             <div class="steps-container">
@@ -175,17 +135,6 @@
             </div>
             <a href="#" class="button button-secondary view-all-button">Empieza a Ofrecer tus Servicios</a>
         </section>
-        <!-- 
-        <section id="video-explicativo" class="section-padded">
-            <h2>Video Explicativo</h2>
-            <div class="video-container">
-                <video controls preload="none" poster="placeholder-video.jpg">
-                    <source src="tu-video.mp4" type="video/mp4">
-                    Tu navegador no soporta el elemento de video.
-                </video>
-            </div>
-        </section>
--->
         <section class="cta-download">
             <h2>Listo para empezar a construir tu futuro?</h2>
             <p>Descarga nuestra aplicación móvil y lleva tu negocio donde quiera que vayas.</p>
@@ -227,7 +176,7 @@
             <a href="#eliminar-cuenta">Eliminar Cuenta</a>
             <a href="#">Contacto</a>
         </div>
-        <p>© 2023 Tu Empresa. Todos los derechos reservados.</p>
+        <p>© 2025 Tu Empresa. Todos los derechos reservados.</p>
     </footer>
 
 </body>
