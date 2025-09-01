@@ -1,15 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Eliminar Cuenta - Servicly.app</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<title>Eliminar Cuenta</title>
 
 <body>
-    <h1>Eliminar Cuenta</h1>
+
+    <header>
+        <div class="logo">
+            <a href="index.html"> <img src="Imagenes/SB1024.png" alt="Logo de Servicly" class="header-logo">
+            </a>
+            <h2>Servicly.app</h2>
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger-menu"><i class="fas fa-bars"></i></label>
+        <div class="menu-container">
+            <nav>
+                <ul>
+                    <li><a href="index.html#inicio">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="index.html#servicios">Servicios <span class="arrow-down"></span></a>
+                        <ul class="dropdown-content">
+                            <li><a href="index.html#Proveedor">Servicio Uno</a></li>
+                            <li><a href="index.html#Cliente">Servicio Dos</a></li>
+                            <li><a href="index.html#Ambos">Servicio Tres</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#precios">Precios</a></li>
+                    <li><a href="index.html#recursos">Recursos</a></li>
+                    <li class="dropdown">
+                        <a href="index.html#empresa">Empresa <span class="arrow-down"></span></a>
+                        <ul class="dropdown-content">
+                            <li><a href="index.html#contacto">Contacto</a></li>
+                            <li><a href="politicas.html">Políticas de la Empresa</a></li>
+                            <li><a href="EliminarCuenta.html">Eliminar Cuenta</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-buttons">
+                <a href="#" class="button-ghost">Iniciar Sesión</a>
+                <a href="#" class="button-primary">Prueba Gratis</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-padded">
+            <h1 class="section-title">Eliminar tu Cuenta</h1>
+            <p class="section-subtitle">
+                Para solicitar la eliminación de tu cuenta y todos tus datos asociados, por favor envía un correo electrónico a <a href="mailto:soporte@servicly.app" style="color: var(--accent);">soporte@servicly.app</a> con el asunto "Solicitud de Eliminación
+                de Cuenta".
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Privacidad</a>
+            <a href="politicas.html">Políticas de la Empresa</a>
+            <a href="#">Términos</a>
+            <a href="EliminarCuenta.html">Eliminar Cuenta</a>
+            <a href="#">Contacto</a>
+        </div>
+        <p>© 2025 Tu Empresa. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 
 </html>
