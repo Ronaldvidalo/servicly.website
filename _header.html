@@ -1,0 +1,30 @@
+<header class="p-4 md:p-6 sticky top-0 z-10 bg-dark-bg/90 backdrop-blur-sm border-b border-surface">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <a href="index.html" class="group flex flex-col items-center transition-all duration-300" title="Volver al inicio">
+
+            <img src="assets/images/logo.png" alt="Servicly Logo" class="h-20 w-20 rounded-full object-cover border-2 border-surface transition-all duration-300 group-hover:border-neon-accent group-hover:shadow-glow-accent">
+            <span class="font-mono text-base font-bold text-neon-accent tracking-widest mt-2 transition-all duration-300 group-hover:text-white">
+        SERVICLY
+         </span>
+        </a>
+
+        <nav class="hidden md:flex space-x-8">
+            <a href="index.html" class="nav-link text-text-primary hover:text-neon-accent transition duration-200" data-page="index.html">Inicio</a>
+            <a href="ayuda.html" class="nav-link text-text-secondary hover:text-neon-accent transition duration-200" data-page="ayuda.html">Ayuda</a>
+            <a href="uso.html" class="nav-link text-text-secondary hover:text-neon-accent transition duration-200" data-page="uso.html">Documentación</a>
+            <a href="privacidad.html" class="nav-link text-text-secondary hover:text-neon-accent transition duration-200" data-page="privacidad.html">Privacidad</a>
+        </nav>
+
+        <button id="menu-toggle" class="md:hidden text-neon-accent p-2 rounded-lg border border-neon-accent hover:shadow-glow-accent transition duration-200">
+            <svg id="icon-menu" class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            <svg id="icon-close" class="w-6 h-6 hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+    </div>
+
+    <nav id="mobile-menu" class="md:hidden mt-4 space-y-2 hidden">
+        <a href="index.html" class="nav-link block p-3 text-text-primary hover:bg-surface" data-page="index.html">Inicio</a>
+        <a href="ayuda.html" class="nav-link block p-3 text-text-secondary hover:bg-surface" data-page="ayuda.html">Ayuda</a>
+        <a href="uso.html" class="nav-link block p-3 text-text-secondary hover:bg-surface" data-page="uso.html">Documentación</a>
+        <a href="privacidad.html" class="nav-link block p-3 text-text-secondary hover:bg-surface" data-page="privacidad.html">Privacidad</a>
+    </nav>
+</header>

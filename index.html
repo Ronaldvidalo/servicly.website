@@ -4,182 +4,288 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicly - Conectando Clientes y Proveedores de Servicios</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Servicly: Tu Negocio, Tu App</title>
+    <meta name="description" content="La plataforma personalizable para profesionales. Véndete como quieras.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dark-bg': '#1A1A2E',
+                        /* Tu Azul Nocturno Profundo */
+                        'surface': '#2D2D5A',
+                        /* Tu Pizarra Cósmica */
+                        'neon-accent': '#00BFFF',
+                        /* Tu Azul Eléctrico Neón */
+                        'neon-success': '#00FF7F',
+                        /* Tu Verde Neón (para el acento secundario) */
+                        'neon-error': '#FF3B30',
+                        /* Tu Rojo Alerta */
+                        'text-primary': '#FFFFFF',
+                        'text-secondary': '#FFFFFFB2',
+                    },
+                    boxShadow: {
+                        'glow-accent': '0 0 10px rgba(0, 191, 255, 0.4), 0 0 20px rgba(0, 191, 255, 0.2)',
+                        'glow-success': '0 0 10px rgba(0, 255, 127, 0.4), 0 0 20px rgba(0, 255, 127, 0.2)',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['Roboto Mono', 'monospace'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            /* Fondo sutil de cuadrícula digital como en el ejemplo */
+            background-image: linear-gradient(to right, #2D2D5A 1px, transparent 1px), linear-gradient(to bottom, #2D2D5A 1px, transparent 1px);
+            background-size: 25px 25px;
+        }
+        
+        .text-glow-accent {
+            text-shadow: 0 0 6px rgba(0, 191, 255, 0.7);
+        }
+    </style>
 </head>
 
-<body>
+<body class="bg-dark-bg text-text-secondary font-sans">
 
-    <header>
-        <div class="logo">
-            <img src="Imagenes/SB1024.png" alt="Logo de Servicly" class="header-logo">
-            <h2>Servicly.app</h2>
-        </div>
+    <div id="header-placeholder"></div>
 
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="hamburger-menu">
-            <i class="fas fa-bars"></i>
-        </label>
+    <main class="flex-grow max-w-7xl mx-auto p-4 md:p-10">
 
-        <div class="menu-container">
-            <nav>
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li class="dropdown">
-                        <a href="#servicios">Servicios <span class="arrow-down"></span></a>
-                        <ul class="dropdown-content">
-                            <li><a href="#Proveedor">Clientes</a></li>
-                            <li><a href="#Cliente">Proveedores</a></li>
-                            <li><a href="#Ambos">Ambos</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#precios">Precios</a></li>
-                    <li><a href="#recursos">Recursos</a></li>
-                    <li class="dropdown">
-                        <a href="#empresa">Empresa <span class="arrow-down"></span></a>
-                        <ul class="dropdown-content">
-                            <li><a href="#contacto">Contacto</a></li>
-                            <li><a href="politicas.html">Políticas de la Empresa</a></li>
-                            <li><a href="EliminarCuenta.html">Eliminar Cuenta</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-            <div class="header-buttons">
-                <a href="#" class="button-ghost">Iniciar Sesión</a>
-                <a href="#" class="button-primary">Prueba Gratis</a>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Tu plataforma para encontrar y ofrecer servicios.</h1>
-                <p>Estamos buscando a los visionarios, a los profesionales y clientes que quieren una mejor forma de conectar. Únete hoy, ayúdanos a darle forma a la plataforma y sé parte fundamental de nuestra historia de éxito. Tu voz es clave en esta
-                    etapa inicial</p>
-                <form class="hero-email-form">
-                    <input type="email" placeholder="Introduce tu email aquí" required>
-                    <button type="submit" class="button-primary">Empezar Prueba Gratis</button>
-                </form>
-                <small class="hero-small-text">Prueba gratis por 30 días, no requiere tarjeta de crédito.</small>
-            </div>
-            <div class="hero-visuals">
-                <img src="Imagenes/LogoS.svg" alt="Mockup de la interfaz de tu producto 1" class="hero-mockup-img">
-                <img src="Imagenes/LogoSS.png" alt="Mockup de la interfaz de tu producto 2" class="hero-mockup-img second">
+        <section class="text-center py-16 md:py-24">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4 font-mono tracking-tighter text-neon-accent text-glow-accent">
+                Tu Negocio, Tu App.
+            </h1>
+            <p class="text-xl md:text-2xl text-text-secondary mb-10 max-w-3xl mx-auto">
+                Organiza, personaliza y véndete como quieras. La plataforma para profesionales y trabajadores independientes.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="#descargar" class="group relative px-8 py-3 rounded-xl font-bold text-lg text-dark-bg bg-neon-accent border-2 border-neon-accent shadow-glow-accent transition duration-300 ease-in-out hover:bg-transparent hover:text-neon-accent hover:scale-[1.03]">
+                    <span class="flex items-center justify-center">
+                        <i data-lucide="download" class="w-6 h-6 mr-2"></i>
+                        Descargar la App
+                    </span>
+                </a>
+                <a href="#web" class="group relative px-8 py-3 rounded-xl font-bold text-lg text-neon-success border-2 border-neon-success shadow-glow-success transition duration-300 ease-in-out hover:bg-neon-success hover:text-dark-bg hover:scale-[1.03]">
+                    <span class="flex items-center justify-center">
+                        <i data-lucide="zap" class="w-6 h-6 mr-2"></i>
+                        Usar Versión Web
+                    </span>
+                </a>
             </div>
         </section>
-        <section id="como-funciona" class="section-padded">
-            <h2>Cómo Funciona</h2>
-            <div class="steps-container">
-                <div class="step-card">
-                    <h3>Paso 1: Regístrate</h3>
-                    <p>Crea tu cuenta en segundos y empieza a explorar nuestras herramientas.</p>
+
+        <section class="py-16 border-t border-surface">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white">¿Te suena familiar?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 rounded-2xl bg-surface border border-neon-accent/30 shadow-glow-accent transition-all duration-300 hover:shadow-glow-accent/60 hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold mb-4 text-neon-accent">Agenda Caótica</h3>
+                    <p class="text-text-secondary">Anotas turnos en papeles, WhatsApp o un cuaderno. Reagendar es una pesadilla y a veces olvidas citas.</p>
                 </div>
-                <div class="step-card">
-                    <h3>Paso 2: Personaliza</h3>
-                    <p>Adapta tu espacio con nuestras opciones flexibles a tus necesidades.</p>
+                <div class="p-6 rounded-2xl bg-surface border border-neon-accent/30 shadow-glow-accent transition-all duration-300 hover:shadow-glow-accent/60 hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold mb-4 text-neon-accent">Finanzas Desordenadas</h3>
+                    <p class="text-text-secondary">No sabes cuánto ganaste el mes pasado. Haces presupuestos a mano y tardas en saber quién te debe dinero.</p>
                 </div>
-                <div class="step-card">
-                    <h3>Paso 3: Lanza</h3>
-                    <p>Todo listo para crecer. ¡Acelera tu negocio al siguiente nivel!</p>
+                <div class="p-6 rounded-2xl bg-surface border border-neon-accent/30 shadow-glow-accent transition-all duration-300 hover:shadow-glow-accent/60 hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold mb-4 text-neon-accent">Clientes Perdidos</h3>
+                    <p class="text-text-secondary">No recuerdas qué servicio le hiciste a "María" hace 6 meses. Pierdes tiempo buscando su dirección.</p>
                 </div>
             </div>
         </section>
 
-        <section id="beneficios-clientes" class="section-padded benefits-section">
-            <h2 class="section-title">Beneficios para Clientes</h2>
-            <p class="section-subtitle">Descubre por qué Servicly es la mejor opción para encontrar el profesional que necesitas.</p>
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <h3>Encuentra el Servicio Ideal</h3>
-                    <p>Publica tus necesidades, desde pintar una casa hasta arreglar una puerta. Miles de proveedores están listos para ayudarte.</p>
+        <section class="py-16 border-t border-surface">
+            <h2 class="text-4xl font-bold text-center mb-16 text-white">La Solución Todo-en-Uno</h2>
+            <div class="grid gap-16">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                    <div>
+                        <span class="font-mono text-neon-success">El Timón de tu Día</span>
+                        <h3 class="text-3xl font-bold my-3 text-neon-accent">Agenda Inteligente</h3>
+                        <p class="text-lg text-text-secondary">Visualiza tu día, semana y mes de un vistazo. Reagenda citas con un solo gesto y envía recordatorios automáticos (próximamente) a tus clientes.</p>
+                    </div>
+                    <div class="h-64 md:h-80 p-6 rounded-2xl bg-surface border border-neon-accent/30 shadow-glow-accent flex items-center justify-center">
+                        <span class="text-text-secondary/50 text-2xl font-mono">Mockup: Vista Agenda</span>
+                    </div>
                 </div>
-                <div class="benefit-card">
-                    <h3>Compara Presupuestos y Calificaciones</h3>
-                    <p>Recibe múltiples ofertas y compara precios, la calidad y las calificaciones de otros clientes para tomar la mejor decisión.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                    <div class="md:order-last">
+                        <span class="font-mono text-neon-success">El Bolsillo Inteligente</span>
+                        <h3 class="text-3xl font-bold my-3 text-neon-accent">Finanzas y Presupuestos</h3>
+                        <p class="text-lg text-text-secondary">Crea y envía presupuestos profesionales con tu logo. Registra gastos e ingresos y mira tus ganancias en tiempo real. Controla quién te debe.</p>
+                    </div>
+                    <div class="h-64 md:h-80 p-6 rounded-2xl bg-surface border border-neon-accent/30 shadow-glow-accent flex items-center justify-center">
+                        <span class="text-text-secondary/50 text-2xl font-mono">Mockup: Vista Finanzas</span>
+                    </div>
                 </div>
-                <div class="benefit-card">
-                    <h3>Contratación Segura y Fácil</h3>
-                    <p>Elige al proveedor que mejor se adapte a tus criterios y contrata de forma sencilla y transparente, sabiendo que estás en buenas manos.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                    <div>
+                        <span class="font-mono text-neon-success">El Fichero Digital</span>
+                        <h3 class="text-3xl font-bold my-3 text-neon-accent">Gestión de Clientes (CRM)</h3>
+                        <p class="text-lg text-text-secondary">Todo el historial de tus clientes en un solo lugar: servicios pasados, notas, direcciones y cuánto te han comprado.</p>
+                    </div>
+                    <div class="h-64 md:h-80 p-6 rounded-2xl bg-surface border border-neon-accent/30 shadow-glow-accent flex items-center justify-center">
+                        <span class="text-text-secondary/50 text-2xl font-mono">Mockup: Vista Cliente</span>
+                    </div>
                 </div>
-                <div class="benefit-card">
-                    <h3>Historial de Trabajos y Valoraciones</h3>
-                    <p>Mantén un registro de tus solicitudes y valora a los proveedores una vez finalizado el trabajo, ayudando a la comunidad.</p>
-                </div>
-            </div>
-            <a href="#" class="button button-primary view-all-button">Encuentra un Servicio Ahora</a>
-        </section>
-
-        <section id="beneficios-proveedores" class="section-padded benefits-section">
-            <h2 class="section-title">Beneficios para Proveedores</h2>
-            <p class="section-subtitle">Potencia tu negocio y encuentra nuevos clientes con la visibilidad y herramientas que Servicly te ofrece.</p>
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <h3>Muestra tu Trabajo en un Portafolio</h3>
-                    <p>Crea posts atractivos con tus proyectos y servicios realizados, funciona como un Instagram profesional para tu trabajo.</p>
-                </div>
-                <div class="benefit-card">
-                    <h3>Accede a Solicitudes de Clientes</h3>
-                    <p>Navega entre cientos de solicitudes de trabajos y envía presupuestos directamente a clientes interesados en tus servicios.</p>
-                </div>
-                <div class="benefit-card">
-                    <h3>Aumenta tu Reputación y Visibilidad</h3>
-                    <p>Construye tu reputación con calificaciones y comentarios positivos, atrayendo más clientes y oportunidades.</p>
-                </div>
-                <div class="benefit-card">
-                    <h3>Gestión Simplificada de Proyectos</h3>
-                    <p>Administra tus ofertas, comunicaciones y proyectos desde un solo lugar, optimizando tu tiempo y recursos.</p>
-                </div>
-            </div>
-            <a href="#" class="button button-secondary view-all-button">Empieza a Ofrecer tus Servicios</a>
-        </section>
-        <section class="cta-download">
-            <h2>Listo para empezar a construir tu futuro?</h2>
-            <p>Descarga nuestra aplicación móvil y lleva tu negocio donde quiera que vayas.</p>
-            <div class="download-buttons">
-                <a href="#" class="button">Descargar para iOS</a>
-                <a href="#" class="button button-secondary">Descargar para Android</a>
             </div>
         </section>
 
-        <section id="redes-sociales" class="section-padded social-media-section">
-            <h2 class="section-title">Encuéntranos en Redes Sociales</h2>
-            <p class="section-subtitle">Sigue nuestras últimas novedades y únete a nuestra comunidad online.</p>
-            <div class="social-icons">
-                <a href="https://facebook.com/tuempresa" target="_blank" aria-label="Facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://twitter.com/tuempresa" target="_blank" aria-label="Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://instagram.com/tuempresa" target="_blank" aria-label="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://linkedin.com/company/tuempresa" target="_blank" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://youtube.com/tuempresa" target="_blank" aria-label="YouTube">
-                    <i class="fab fa-youtube"></i>
-                </a>
+        <section class="py-16 border-t border-surface">
+            <h2 class="text-4xl font-bold text-center mb-16 text-white">Lo que dicen nuestros usuarios</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="flex flex-col p-8 rounded-2xl bg-surface border border-neon-accent/30 shadow-glow-accent">
+                    <i data-lucide="quote" class="w-10 h-10 text-neon-accent/50 mb-4"></i>
+                    <p class="text-lg text-text-primary flex-grow">
+                        "Antes anotaba todo en un cuaderno y era un caos. Con Servicly ahora tengo mis finanzas y agenda en un solo lugar y me veo 10 veces más profesional."
+                    </p>
+                    <div class="mt-6">
+                        <p class="font-bold text-white text-lg">Javier López</p>
+                        <p class="text-text-secondary/80">PlomeríaLópez</p>
+                    </div>
+                </div>
+                <div class="flex flex-col p-8 rounded-2xl bg-surface border border-neon-accent/30 shadow-glow-accent">
+                    <i data-lucide="quote" class="w-10 h-10 text-neon-accent/50 mb-4"></i>
+                    <p class="text-lg text-text-primary flex-grow">
+                        "La función de crear catálogos es genial. Armé mi 'tienda' digital en 10 minutos y ahora mis clientes de repostería ven mis tortas y precios de forma clara."
+                    </p>
+                    <div class="mt-6">
+                        <p class="font-bold text-white text-lg">Ana Gutiérrez</p>
+                        <p class="text-text-secondary/80">DeliciasAna</p>
+                    </div>
+                </div>
+                <div class="flex flex-col p-8 rounded-2xl bg-surface border border-neon-accent/30 shadow-glow-accent">
+                    <i data-lucide="quote" class="w-10 h-10 text-neon-accent/50 mb-4"></i>
+                    <p class="text-lg text-text-primary flex-grow">
+                        "Uso Servicly para mi consultorio. Gestionar los turnos y tener el historial de cada paciente en el celular me ahorró muchísimo tiempo."
+                    </p>
+                    <div class="mt-6">
+                        <p class="font-bold text-white text-lg">Dra. María Paz</p>
+                        <p class="text-text-secondary/80">Consultora</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 border-t border-surface">
+            <h2 class="text-4xl font-bold text-center mb-16 text-white">Preguntas Frecuentes</h2>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="border border-surface rounded-lg overflow-hidden bg-surface/50">
+                    <button class="faq-toggle flex justify-between items-center w-full p-6 text-left">
+                        <span class="text-xl font-bold text-white">¿Mis clientes necesitan descargar la app?</span>
+                        <div class="text-neon-accent">
+                            <i data-lucide="plus" class="w-6 h-6"></i>
+                            <i data-lucide="minus" class="w-6 h-6 hidden"></i>
+                        </div>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0 text-text-secondary text-lg">
+                        <p>No. Esa es la magia de Servicly. Tus clientes reciben tus presupuestos, recordatorios y ven tu catálogo digital como una página web normal, sin necesidad de descargar nada.</p>
+                    </div>
+                </div>
+                <div class="border border-surface rounded-lg overflow-hidden bg-surface/50">
+                    <button class="faq-toggle flex justify-between items-center w-full p-6 text-left">
+                        <span class="text-xl font-bold text-white">¿Mis datos están seguros si pierdo el teléfono?</span>
+                        <div class="text-neon-accent">
+                            <i data-lucide="plus" class="w-6 h-6"></i>
+                            <i data-lucide="minus" class="w-6 h-6 hidden"></i>
+                        </div>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0 text-text-secondary text-lg">
+                        <p>Sí. Toda tu información (clientes, agenda, finanzas) se guarda de forma segura en la nube (usando Firebase de Google). Si pierdes tu teléfono, solo tienes que iniciar sesión en uno nuevo y toda tu información estará allí.</p>
+                    </div>
+                </div>
+                <div class="border border-surface rounded-lg overflow-hidden bg-surface/50">
+                    <button class="faq-toggle flex justify-between items-center w-full p-6 text-left">
+                        <span class="text-xl font-bold text-white">¿Tengo que poner mi tarjeta de crédito para probarla?</span>
+                        <div class="text-neon-accent">
+                            <i data-lucide="plus" class="w-6 h-6"></i>
+                            <i data-lucide="minus" class="w-6 h-6 hidden"></i>
+                        </div>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0 text-text-secondary text-lg">
+                        <p>No. Servicly tiene un plan inicial gratuito que te permite usar las funciones principales sin costo y sin necesidad de registrar una tarjeta. Puedes explorar la app y ver si se adapta a tu negocio sin compromiso.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 border-t border-surface text-center">
+            <div class="container max-w-3xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-white">
+                    Empieza a organizar tu negocio hoy
+                </h2>
+                <p class="text-xl text-text-secondary mt-6 mb-10">
+                    Descarga la app y prueba Servicly. Es hora de ahorrar tiempo y proyectar la imagen profesional que mereces.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="#descargar" class="group relative px-8 py-3 rounded-xl font-bold text-lg text-dark-bg bg-neon-accent border-2 border-neon-accent shadow-glow-accent transition duration-300 ease-in-out hover:bg-transparent hover:text-neon-accent hover:scale-[1.03]">
+                        <span class="flex items-center justify-center">
+                            <i data-lucide="download" class="w-6 h-6 mr-2"></i>
+                            Descargar la App
+                        </span>
+                    </a>
+                    <a href="#web" class="group relative px-8 py-3 rounded-xl font-bold text-lg text-neon-success border-2 border-neon-success shadow-glow-success transition duration-300 ease-in-out hover:bg-neon-success hover:text-dark-bg hover:scale-[1.03]">
+                        <span class="flex items-center justify-center">
+                            <i data-lucide="zap" class="w-6 h-6 mr-2"></i>
+                            Usar Versión Web
+                        </span>
+                    </a>
+                </div>
+                <div class="mt-20">
+                    <h3 class="text-2xl font-bold text-white">
+                        Únete a la comunidad
+                    </h3>
+                    <div class="flex justify-center space-x-8 mt-8">
+                        <a href="https://instagram.com/tu-usuario" target="_blank" rel="noopener noreferrer" class="text-text-secondary/70 transition-all duration-300 hover:text-neon-accent hover:shadow-glow-accent hover:scale-110">
+                            <i data-lucide="instagram" class="w-8 h-8"></i>
+                        </a>
+                        <a href="https://youtube.com/tu-canal" target="_blank" rel="noopener noreferrer" class="text-text-secondary/70 transition-all duration-300 hover:text-neon-accent hover:shadow-glow-accent hover:scale-110">
+                            <i data-lucide="youtube" class="w-8 h-8"></i>
+                        </a>
+                        <a href="https://facebook.com/tu-pagina" target="_blank" rel="noopener noreferrer" class="text-text-secondary/70 transition-all duration-300 hover:text-neon-accent hover:shadow-glow-accent hover:scale-110">
+                            <i data-lucide="facebook" class="w-8 h-8"></i>
+                        </a>
+                        <a href="https://wa.me/xxxxxxxx" target="_blank" rel="noopener noreferrer" class="text-text-secondary/70 transition-all duration-300 hover:text-neon-success hover:shadow-glow-success hover:scale-110">
+                            <i data-lucide="message-circle" class="w-8 h-8"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
     </main>
 
-    <footer>
-        <div class="footer-links">
-            <a href="#">Privacidad</a>
-            <a href="#politicas">Políticas de la Empresa</a>
-            <a href="#">Términos</a>
-            <a href="#eliminar-cuenta">Eliminar Cuenta</a>
-            <a href="#">Contacto</a>
-        </div>
-        <p>© 2025 Tu Empresa. Todos los derechos reservados.</p>
-    </footer>
+    <div id="footer-placeholder"></div>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                const faqToggles = document.querySelectorAll('.faq-toggle');
+                faqToggles.forEach(toggle => {
+                    toggle.addEventListener('click', () => {
+                        const answer = toggle.nextElementSibling;
+                        const iconPlus = toggle.querySelector('[data-lucide="plus"]');
+                        const iconMinus = toggle.querySelector('[data-lucide="minus"]');
+                        answer.classList.toggle('hidden');
+                        iconPlus.classList.toggle('hidden');
+                        iconMinus.classList.toggle('hidden');
+                    });
+                });
+            }, 100);
+        });
+    </script>
+
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
